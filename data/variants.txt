@@ -81,7 +81,7 @@
             "varintValue": "3395698268"
           },
           "show_beta_tag": {
-            "boolValue": true
+            "boolValue": false
           },
           "small_hero_card": {
             "boolValue": true
@@ -306,6 +306,9 @@
           "n_bots": {
             "varintValue": "10"
           },
+          "speed_scale": {
+            "numberValue": 2.00001
+          },
           "speedscaling_enabled": {
             "boolValue": true
           }
@@ -407,10 +410,12 @@
       "name": "game_1_116_deprecate_wahoo_ant_burst_mode"
     },
     {
-      "name": "game_1_116_lan_no_delay"
+      "name": "game_1_116_lan_no_delay",
+      "value": true
     },
     {
-      "name": "game_1_116_no_power_just_watch"
+      "name": "game_1_116_no_power_just_watch",
+      "value": true
     },
     {
       "name": "game_1_116_poll_world_list",
@@ -420,7 +425,8 @@
       "name": "game_1_116_unlimited_znet_retry"
     },
     {
-      "name": "game_1_116_use_alternate_next_up_description"
+      "name": "game_1_116_use_alternate_next_up_description",
+      "value": true
     },
     {
       "name": "game_1_15_assert_disable_abort",
@@ -890,8 +896,8 @@
       "value": true,
       "values": {
         "fields": {
-          "backRepulsionPercent": {
-            "numberValue": 0.8
+          "enableMochiPackDynamics": {
+            "boolValue": false
           },
           "enabledForAllWorlds": {
             "boolValue": true
@@ -910,27 +916,6 @@
           },
           "enabledForWatopia": {
             "boolValue": true
-          },
-          "handCycleExtraHardness": {
-            "numberValue": 0.5
-          },
-          "manualSteeringExtraHardness": {
-            "numberValue": 0.0
-          },
-          "maxAvoidanceDistanceInCm": {
-            "numberValue": 600.0
-          },
-          "maxDistanceForFavoringCorrectSideInCm": {
-            "numberValue": 5.0
-          },
-          "minAvoidanceDistanceInCm": {
-            "numberValue": 200.0
-          },
-          "pillDistanceScale": {
-            "numberValue": 0.45
-          },
-          "pillHardness": {
-            "numberValue": 0.45
           }
         }
       }
@@ -1013,7 +998,7 @@
       "values": {
         "fields": {
           "challenge_carousel_id": {
-            "stringValue": "prod_home_challenge_carousel_1_114"
+            "stringValue": "prod_home_challenge_carousel_1_116"
           }
         }
       }
@@ -1434,6 +1419,9 @@
           "cadex_max50_rear_wheel": {
             "boolValue": true
           },
+          "canyon_speedmax_cfr_2026": {
+            "boolValue": false
+          },
           "cervelo_s5_2026": {
             "boolValue": true
           },
@@ -1459,6 +1447,15 @@
             "boolValue": true
           },
           "reserve_57_rear_wheel": {
+            "boolValue": true
+          },
+          "roval_rapide_clx_front_wheel": {
+            "boolValue": true
+          },
+          "roval_rapide_clx_rear_wheel": {
+            "boolValue": true
+          },
+          "specialized_tarmac_sl9_2026": {
             "boolValue": true
           },
           "supersixevo_2026": {
@@ -1607,7 +1604,7 @@
             "stringValue": "dlc_asset"
           },
           "build_id": {
-            "stringValue": "162642"
+            "stringValue": "162763"
           },
           "canary_test": {
             "boolValue": true
@@ -1725,6 +1722,9 @@
         "fields": {
           "config": {
             "stringValue": "{}"
+          },
+          "entitlement_mode": {
+            "stringValue": "core"
           },
           "manifest": {
             "stringValue": "{}"
@@ -2136,7 +2136,8 @@
       }
     },
     {
-      "name": "quest_service_awards_xp"
+      "name": "quest_service_awards_xp",
+      "value": true
     },
     {
       "name": "quest_stage_cards",
