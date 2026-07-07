@@ -213,10 +213,6 @@
       "name": "game_1_102_unpair_all_devices"
     },
     {
-      "name": "game_1_103_custom_loop_point",
-      "value": true
-    },
-    {
       "name": "game_1_103_fill_right_hand_rewards_page",
       "value": true
     },
@@ -266,7 +262,18 @@
       "value": true
     },
     {
-      "name": "game_1_108_allow_experimental_uploading"
+      "name": "game_1_108_allow_experimental_uploading",
+      "value": true,
+      "values": {
+        "fields": {
+          "allow_mochi_uploading": {
+            "boolValue": false
+          },
+          "allow_portal_uploading": {
+            "boolValue": false
+          }
+        }
+      }
     },
     {
       "name": "game_1_108_challenge_poster_cards",
@@ -392,8 +399,7 @@
       "value": true
     },
     {
-      "name": "game_1_114_load_routes_early",
-      "value": true
+      "name": "game_1_114_load_routes_early"
     },
     {
       "name": "game_1_114_next_up_expandable_explanation",
@@ -427,6 +433,18 @@
     {
       "name": "game_1_116_use_alternate_next_up_description",
       "value": true
+    },
+    {
+      "name": "game_1_117_bishop_progress_report"
+    },
+    {
+      "name": "game_1_117_feature_gate_entitlements"
+    },
+    {
+      "name": "game_1_117_quest_card_countdown_ribbon"
+    },
+    {
+      "name": "game_1_117_steering_constraints_render_fix"
     },
     {
       "name": "game_1_15_assert_disable_abort",
@@ -664,9 +682,6 @@
       "value": true
     },
     {
-      "name": "game_1_48_show_rssi"
-    },
-    {
       "name": "game_1_48_tow_double_xp_routes_enabled",
       "value": true,
       "values": {
@@ -789,9 +804,6 @@
       }
     },
     {
-      "name": "game_1_49_0_track_rssi"
-    },
-    {
       "name": "game_1_49_onboarding_ftp_estimation",
       "values": {
         "fields": {
@@ -847,19 +859,11 @@
       "name": "game_1_54_m0b1"
     },
     {
-      "name": "game_1_54_tdz_confetti_pattern",
-      "value": true
-    },
-    {
       "name": "game_1_55_0_workout_detail_screen_tooltips_running",
       "value": true
     },
     {
       "name": "game_1_58_0_gender_to_event_category"
-    },
-    {
-      "name": "game_1_58_steer_to_select_intersection",
-      "value": true
     },
     {
       "name": "game_1_59_queued_recommendations",
@@ -882,10 +886,6 @@
           }
         }
       }
-    },
-    {
-      "name": "game_1_64_rubberbanding_v3",
-      "value": true
     },
     {
       "name": "game_1_65_remove_curate_route_checkpoints",
@@ -923,9 +923,6 @@
     {
       "name": "game_1_66_change_pause_title_to_menu",
       "value": true
-    },
-    {
-      "name": "game_1_66_hide_transition_start_level_on_pause_screen"
     },
     {
       "name": "game_1_66_tpeaks_multiday",
@@ -1227,7 +1224,21 @@
       }
     },
     {
-      "name": "game_1_92_robo_pacer_custom_skin"
+      "name": "game_1_92_robo_pacer_custom_skin",
+      "value": true,
+      "values": {
+        "fields": {
+          "BodyTextureName": {
+            "stringValue": "RPBodyTourFever2026_DM.tga"
+          },
+          "GlowTextureName": {
+            "stringValue": "Glow_TourFever.tga"
+          },
+          "LimbsTextureName": {
+            "stringValue": "RPLimbsTourFever2026_DM.tga"
+          }
+        }
+      }
     },
     {
       "name": "game_1_93_ns_device_list",
@@ -1413,6 +1424,9 @@
       "value": true,
       "values": {
         "fields": {
+          "CanyonAeroad_Alpecin_2026": {
+            "boolValue": true
+          },
           "cadex_max50_front_wheel": {
             "boolValue": true
           },
@@ -1516,45 +1530,18 @@
       "name": "game_button_rideon_bomb_prompt_delay"
     },
     {
-      "name": "game_camera_spill"
-    },
-    {
-      "name": "game_check_for_video_updates"
-    },
-    {
-      "name": "game_cheerful_polka_accordion2",
+      "name": "game_camera_spill",
       "value": true,
       "values": {
         "fields": {
-          "cutsj": {
-            "boolValue": true
-          },
-          "endj": {
-            "varintValue": "4890105860"
-          },
-          "intj": {
-            "boolValue": true
-          },
-          "magscalej": {
-            "numberValue": 1.0
-          },
-          "minij": {
-            "boolValue": true
-          },
-          "routej": {
-            "boolValue": true
-          },
-          "screenj": {
-            "boolValue": true
-          },
-          "startj": {
-            "varintValue": "1731427200"
-          },
-          "teleportj": {
-            "boolValue": true
+          "fence_paris": {
+            "stringValue": "release;SRAPRXRLCO"
           }
         }
       }
+    },
+    {
+      "name": "game_check_for_video_updates"
     },
     {
       "name": "game_coffeestop_early_middle_timer",
@@ -1577,7 +1564,21 @@
       "value": true
     },
     {
-      "name": "game_default_deco"
+      "name": "game_default_deco",
+      "value": true,
+      "values": {
+        "fields": {
+          "world1": {
+            "stringValue": "tourfever2026"
+          },
+          "world10": {
+            "stringValue": "tourfever2026"
+          },
+          "world11": {
+            "stringValue": "tourfever2026"
+          }
+        }
+      }
     },
     {
       "name": "game_disable_cached_subgroup_protobuf",
@@ -1669,9 +1670,6 @@
       "value": true
     },
     {
-      "name": "game_fireworks"
-    },
-    {
       "name": "game_for_you_tooltips"
     },
     {
@@ -1679,9 +1677,6 @@
     },
     {
       "name": "game_groupevent_join_fix"
-    },
-    {
-      "name": "game_hrm_hrv"
     },
     {
       "name": "game_hvc_telemetry"
@@ -1869,7 +1864,7 @@
       "values": {
         "fields": {
           "version": {
-            "stringValue": "1.116.0"
+            "stringValue": "1.117.0"
           }
         }
       }
@@ -1919,13 +1914,6 @@
     },
     {
       "name": "game_tbs_2025_package"
-    },
-    {
-      "name": "game_tdz_2025_package"
-    },
-    {
-      "name": "game_tdz_2025_package_fw",
-      "value": true
     },
     {
       "name": "game_templated_event_decor"
@@ -2048,10 +2036,6 @@
     },
     {
       "name": "gfx_drawinstanced",
-      "value": true
-    },
-    {
-      "name": "gfx_framebuffer_srgb",
       "value": true
     },
     {

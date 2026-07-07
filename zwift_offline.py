@@ -1650,6 +1650,7 @@ def api_clubs_club_my_clubs_summary():
 @app.route('/api/game-asset-patching-service/manifest', methods=['GET'])
 @app.route('/api/workout/progress', methods=['POST'])
 @app.route('/api/power-curve/power-profile/proto', methods=['GET'])
+@app.route('/api/achievement/route-completion-achievements', methods=['GET'])  # TODO
 def api_proto_empty():
     return '', 200
 
