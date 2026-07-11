@@ -4718,8 +4718,10 @@ class CleanWSGIServer(WSGIServer):
     def wrap_socket_and_handle(self, client_socket, address):
         try:
             super().wrap_socket_and_handle(client_socket, address)
-        except ssl.SSLEOFError:
+        except ssl.SSLError:
             pass  # Suppress log spam caused by Launcher 1.1.17
+        except ConnectionResetError:
+            logger.warning('WSGIServer: connection reset by client (missing certificate in cacert.pem?)')
 
 
 def run_standalone(passed_online, passed_global_relay, passed_global_pace_partners, passed_global_bots, passed_global_ghosts, passed_regroup_ghosts, passed_discord):
