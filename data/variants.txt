@@ -391,7 +391,18 @@
       "value": true
     },
     {
-      "name": "game_1_114_next_up_quest_tag"
+      "name": "game_1_114_next_up_quest_tag",
+      "value": true,
+      "values": {
+        "fields": {
+          "quest_tag_color_hex": {
+            "stringValue": "#2C2C33"
+          },
+          "quest_tag_text_color_hex": {
+            "stringValue": "#FCFCFC"
+          }
+        }
+      }
     },
     {
       "name": "game_1_115_disable_empty_leaderboard",
@@ -436,7 +447,8 @@
       "name": "game_1_117_theater_card"
     },
     {
-      "name": "game_1_118_poll_user_profile_fetch"
+      "name": "game_1_118_poll_user_profile_fetch",
+      "value": true
     },
     {
       "name": "game_1_118_remove_stale_devices",
@@ -1407,7 +1419,7 @@
             "boolValue": true
           },
           "CanyonAeroad_Green_2026": {
-            "boolValue": false
+            "boolValue": true
           },
           "cadex_max50_front_wheel": {
             "boolValue": true
@@ -1587,7 +1599,7 @@
             "stringValue": "dlc_asset"
           },
           "build_id": {
-            "stringValue": "163255"
+            "stringValue": "163822"
           },
           "canary_test": {
             "boolValue": true
@@ -2011,6 +2023,9 @@
       "value": true,
       "values": {
         "fields": {
+          "bRememberLastEquippedWheel": {
+            "boolValue": false
+          },
           "bRememberSavedPaintHue": {
             "boolValue": true
           }
