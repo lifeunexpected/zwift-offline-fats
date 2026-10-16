@@ -5,6 +5,7 @@
 > * Updated to the latest version of Zwift and Launcher ([#522](https://github.com/zoffline/zwift-offline/pull/522))
 > * Added an option to upload activities and screenshots to Strava without an active paid subscription ([#529](https://github.com/zoffline/zwift-offline/pull/529))
 > * Fixed an issue where an activity uploaded to Intervals.icu would create a duplicate if paired to a synced workout ([#536](https://github.com/zoffline/zwift-offline/pull/536))
+> * Updated to the latest version of Companion and added instructions for enabling the fitness widget ([#540](https://github.com/zoffline/zwift-offline/pull/540))
 
 zoffline enables the use of [Zwift](http://zwift.com) offline by acting as a partial implementation of a Zwift server. By default zoffline is only for a single player. See [Step 6: Enable Multiplayer](#step-6-optional-enable-multiplayer) for how to enable support for multiple users/profiles.
 
@@ -263,26 +264,7 @@ To obtain your current profile:
 
 <details><summary>Android (non-rooted device)</summary>
 
-* Install apk-mitm (https://github.com/shroudedcode/apk-mitm)
-* Open ``apk-mitm/dist/tools/apktool.js`` (run ``npm root -g`` to find its location) and edit it like this:
-  ``` js
-      decode(inputPath, outputPath) {
-          return this.run([
-              'decode',
-              '-resm', // add this
-              'dummy', // add this
-              inputPath,
-              '--output',
-              outputPath,
-              '--frame-path',
-              this.options.frameworkPath,
-          ], 'decoding');
-      }
-  ```
-* Copy the file [ssl/cert-zwift-com.pem](https://github.com/zoffline/zwift-offline/raw/master/ssl/cert-zwift-com.pem) in this repo and the Zwift Companion apk (e.g. ``zca.apk``) to a known location
-* Open Command Prompt, cd to that location and run
-  * ``apk-mitm --certificate cert-zwift-com.pem zca.apk``
-* Copy ``zca-patched.apk`` to your phone and install it
+* Download and install the patched apk from [here](https://github.com/fatsbrown/zoffline-companion/releases/latest) (or [patch it yourself](https://github.com/fatsbrown/zoffline-companion#patch-it-yourself))
 * Download and install ``app-Github-release.apk`` from [here](https://github.com/x-falcon/Virtual-Hosts/releases/latest)
 * Create a ``hosts.txt`` file to use with the app (you could use a text editor app or create it online with an online tool such as [this](https://passwordsgenerator.net/text-editor/)). The file must look like this (replace ``<zoffline ip>`` with the IP address of the machine running zoffline):
   ```
